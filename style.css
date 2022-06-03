@@ -1,0 +1,284 @@
+.header h1 {
+    color: brown;
+}
+
+.header h2 {
+    color: navy;
+}
+
+.header h3 {
+    color: yellow;
+}
+
+.header h4 {
+    color: tomato;
+}
+
+.header h5 {
+    color: darkcyan;
+}
+
+.header h6 {
+    color: blueviolet;
+}
+
+.header {
+    text-align: center;
+    margin: 25px;
+    padding: 10px;
+}
+
+.formula p {
+    background-color: rgb(100, 146, 233);
+    border: 3px dashed;
+    width: 15%;
+    height: 50px;
+
+}
+
+.spisok ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spisok ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.spisok ul li {
+    background: url(inst.png) no-repeat;
+    padding-left: 35px;
+}
+
+
+.spisok li {
+    margin: 25px;
+
+}
+
+.spisok li:hover {
+    color: red;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.link button {
+    font-size: 75px;
+    width: 400px;
+    height: 400px;
+    border-style: dashed;
+    background-color: aqua;
+}
+
+.link button:hover {
+    background-color: blueviolet;
+    border-style: dashed;
+    border-color: orange;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    margin: 10px;
+}
+
+.ChangeImage {
+    flex: 0 0 auto;
+    width: 450px;
+    height: 300px;
+    background: url(500.png);
+    margin: 10px;
+}
+
+.ChangeImage:hover {
+    background: url(501.jpg);
+}
+
+#transformImage {
+    transform: scale(-1, 1);
+}
+
+.forma form {
+    width: 500px;
+    height: 280px;
+    background-color: orange;
+    border: 2px dashed;
+}
+
+.forma input,
+textarea {
+    background-color: bisque;
+}
+
+.forma input {
+    border: 2px solid black;
+    padding-left: 7px;
+}
+
+.forma textarea {
+    padding-left: 7px;
+    width: 400px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.text1 {
+    color: red;
+}
+
+.forma button {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.forma button:hover {
+    background-color: red;
+}
+
+.table {
+    text-align: center;
+}
+
+table td:nth-child(even) {
+    color: gray;
+}
+
+table td:nth-child(odd) {
+    color: blue;
+}
+
+.video button {
+
+    width: 100px;
+    height: 25px;
+}
+
+body {
+    animation-name: blocks;
+    animation-duration: 3.5s;
+}
+
+#anim {
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blocks {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@media (max-width:757px) {
+    section {
+        background-color: #77dde7;
+    }
+
+    .formula p {
+        width: auto;
+    }
+
+    p,
+    li,
+    table td:nth-child(even) {
+        color: red;
+    }
+
+    .link {
+        text-align: center;
+    }
+
+    .video iframe {
+        width: auto;
+    }
+
+    .image,
+    .link,
+    .spisok ol,
+    .spisok ul {
+        flex-direction: column;
+    }
+
+    .table {
+        overflow: scroll;
+        width: auto;
+    }
+
+    .image img {
+        width: auto;
+    }
+
+    .ChangeImage {
+        width: auto;
+        background: url(html.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .forma form,
+    p {
+        width: auto;
+    }
+
+    .forma form textarea {
+        width: auto;
+    }
+
+    .forma form {
+        margin: 10px;
+    }
+
+    .link button {
+        width: auto;
+    }
+}
+
+@media (min-width:768px) and (max-width:1365px) {
+    section {
+        background-color: #fff8dc;
+    }
+
+    p,
+    li,
+    table td:nth-child(even) {
+        color: brown;
+    }
+
+    .image,
+    .link,
+    .spisok ol,
+    .spisok ul {
+        flex-wrap: wrap;
+    }
+
+}
